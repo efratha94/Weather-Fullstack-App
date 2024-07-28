@@ -3,6 +3,7 @@ const renderer = new Renderer()
 
 
 const loadPage = async function () {
+    console.log('hi!')
     let citiesFromDB = await tempManager.getDataFromDB()
     for (let i of tempManager.cityData) {
         $("#cities-container").empty()
